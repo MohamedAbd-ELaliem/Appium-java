@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="listeners.com.TesListeners"></listener>
+</listeners>
+
+ <test thread-count="5" name="Test on Android">
+ 
+<parameter name="deviceName" value="Android"></parameter>
+<parameter name="platformVersion" value="11.0"></parameter>
+<parameter name="platformName" value="Android"></parameter>
+<parameter name="Email" value="appium@test.com"></parameter>
+<parameter name="password" value="123456"></parameter>
+<parameter name="Test" value="Test"></parameter>
+<parameter name="AddTask" value="Task"></parameter>
+<parameter name="error_message" value="Not Found Confirm Message>"></parameter>
+
+
+    <classes>
+    <class name="TestCases.SingUp_Test_Cases"/>
+    <class name="TestCases.Login_Test_Cases"/>  
+     <class name="TestCases.New_Task_TestCases"/>
+    <class name="TestCases.Tasks_Screen_TestCases"/>            
+                       
+ <!-- 
+-->
+ </classes>
+ </test> 
+</suite> 

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.com.TesListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test on Android(failed)">
+    <parameter name="error_message" value="Not Found Confirm Message&gt;"/>
+    <parameter name="password" value="123456"/>
+    <parameter name="Email" value="appium@test.com"/>
+    <parameter name="AddTask" value="Task"/>
+    <parameter name="Test" value="Test"/>
+    <parameter name="platformVersion" value="12.0"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="deviceName" value="Android"/>
+    <classes>
+      <class name="TestCases.SingUp_Test_Cases">
+        <methods>
+          <include name="singup_with_ValidData"/>
+          <include name="beforeClass"/>
+          <include name="AfddderClass"/>
+          <include name="AfterClass"/>
+          <include name="BeforeeClass"/>
+        </methods>
+      </class> <!-- TestCases.SingUp_Test_Cases -->
+      <class name="TestCases.Login_Test_Cases">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="AfddderClass"/>
+          <include name="login_with_credentials"/>
+          <include name="login_with_Enail_Empty"/>
+          <include name="login_with_password_Empty"/>
+          <include name="AfterClass"/>
+          <include name="BeforeeClass"/>
+        </methods>
+      </class> <!-- TestCases.Login_Test_Cases -->
+      <class name="TestCases.Tasks_Screen_TestCases">
+        <methods>
+          <include name="Check_current_tasks"/>
+          <include name="beforeClass"/>
+          <include name="AfddderClass"/>
+          <include name="press_logout_from_Tasks_Screen"/>
+          <include name="AfterClass"/>
+          <include name="Add_New_Task"/>
+          <include name="BeforeeClass"/>
+        </methods>
+      </class> <!-- TestCases.Tasks_Screen_TestCases -->
+      <class name="TestCases.New_Task_TestCases">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="AfddderClass"/>
+          <include name="click_Add_New_Task"/>
+          <include name="press_logout"/>
+          <include name="AfterClass"/>
+          <include name="BeforeeClass"/>
+        </methods>
+      </class> <!-- TestCases.New_Task_TestCases -->
+    </classes>
+  </test> <!-- Test on Android(failed) -->
+</suite> <!-- Failed suite [Suite] -->
